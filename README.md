@@ -1,3 +1,7 @@
+# Obl1Opgave3
+
+Opgave 3 TypeScript. Opgave 3 i obligatorisk opgave 1.
+
 Opgave 3 TypeScript
 Du skal lave en web-applikation. Applikationen skal have en enkelt HTML side og en underliggende TypeScript fil.
 
