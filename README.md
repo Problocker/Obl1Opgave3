@@ -1,39 +1,12 @@
-# Webpack - TypeScript - SCSS
-this project is a beginner-friendly introduction to Webpack, Type Script and SCSS.
-This includes a simple webpack configuration including TypeScript and SCSS transporation
+Opgave 3 TypeScript
+Du skal lave en web-applikation. Applikationen skal have en enkelt HTML side og en underliggende TypeScript fil.
 
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Brugeren skal kunne indtaste en tekst-streng og vælge mellem forskellige manipulationer af tekst-strengen f.eks. toUpperCase og toLowerCase
 
-### Prerequisites
-You need a recent installation of Node on your computer... and git if you want to clone the project
+Du skal anvende web template https://github.com/andersbor/Webpack-template
 
-### Installing
-You can either download this project or clone it from github: yo ucan use this command to clone it and give it a new name
-(replace "new-project-based-on-the-webpack-template" with your own name...)
-```console
-git clone https://github.com/andersbor/Webpack-template new-project-based-on-the-webpack-template
-```
+Web-applikationen skal være tilgængelig i Azure.
 
-move into your newly created folder and install all dependencies (node modules)
-```console
-npm install
-```
+Hjælp: Use FTP, or use the Kudu console (“Upload files and folder using drag and drop”).
 
-### Start Developing
-You run the project example in the src folder
-```console
-npm run watch
-```
-Your browser should no show the index.htm and automatically refresh when you do changes in the src folder.
-Remember that your src files are automatically transpiles and or copied to the dist folder and then showed from there
-
-### Deployment
-When your project is ready for deployment you should use webpack in production mode by writing this in the console
-```console
-npm run webpack:prod
-```
-That will minify your code and make is production ready
-
-### Author
-Ebbe Vang and Anders Børjesson
+Tekst-dokumentet, som du afleverer i Wiseflow, skal foruden link til GitHub repository også indeholde link til Azure web-sted.
