@@ -4,18 +4,30 @@ new Vue({
     // which is included at the bottom of the html file.
     el: "#app",
     data: {
-        name: "",
-        greeting: ""
+        tekst: "",
+        uddata: "",
+        bogstaver: "vælg"
     },
     methods: {
-        sayHello() {
-            console.log("Say Hello " + this.name)
-            if (this.name == "") {
-                this.greeting = "Hello NoName"
+        Tekst: function () {
+            console.log("Tekst" + this.tekst);
+            this.uddata = this.tekst.toString();
+            if (this.tekst == "") {
+                this.uddata = "Ingen teskt i tekstfelt.";
             }
             else {
-                this.greeting = "Hello " + this.name
+                console.log(this.bogstaver);
+                switch (this.bogstaver) {
+                    case "storeBogstaver":
+                        console.log("StoreBogstaver");
+                        this.uddata = this.uddata.toUpperCase();
+                        break;
+                    case "småBogstaver":
+                        console.log("SmåBogstaver");
+                        this.uddata = this.tekst.toLowerCase();
+                        break;
+                }
             }
         }
     }
-})
+});

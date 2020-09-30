@@ -9,21 +9,42 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-  <title>Hello app</title>
+  <style>
+    .footer {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #333;
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+       text-align: center;
+    }
+    </style>
+  <title>Opgave 3 TypeScript</title>
 </head>
 
-<body>
-  <h1>Hello</h1>
-  <div id="app">
-    <input v-model="name" placeholder="Name">
-    <button v-on:click="sayHello()" class="btn btn-primary">Say hello</button>
-    <div>{{ greeting }}</div>
+<body style="background-color: #fff387"></body>
+  <h1>TypeScript String Manipulation</h1>
+  <div id="app" style="border: 5pt; border-style: dashed; padding: 20pt">
+    <input v-model="tekst" placeholder="Skriv noget">
+    <select v-model="bogstaver">
+      <option Value="vælg"> Vælg</option> <!-- Standard værdig, som fortælle "man skal vælge noget".  -->
+      <option value=storeBogstaver>STORE BOGSTAVER</option>
+      <option value=småBogstaver>små bogstaver</option>
+    </select>
+    <button v-on:click="Tekst()" class="btn btn-success" >GØR DET!</button>
+    <div>{{ uddata }}</div>
   </div>
 
   <script src="bundle.js"></script>
+
+  <div class="footer">
+    <p>Lavet af Mikkel Olsen</p>
+  </div>
+
 </body>
 
 </html>
